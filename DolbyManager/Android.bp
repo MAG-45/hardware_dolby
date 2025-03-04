@@ -7,14 +7,12 @@
 
 android_app {
     name: "DolbyManager",
-
     srcs: ["src/**/*.kt"],
     resource_dirs: ["res"],
     certificate: "platform",
     platform_apis: true,
     system_ext_specific: true,
     privileged: true,
-
     overrides: ["MusicFX", "AudioFX"],
     static_libs: [
         "SettingsLib",
